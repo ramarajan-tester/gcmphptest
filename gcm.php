@@ -1,10 +1,10 @@
 <?php
 
 // API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'YOUR-API-ACCESS-KEY-GOES-HERE' );
+define( 'API_ACCESS_KEY', 'AIzaSyCC31dZ516pKXRsF4W7pMpR4mbxYBHEVkc' );
 
 
-$registrationIds = array("YOUR DEVICE IDS WILL GO HERE" );
+$registrationIds = array("APA91bHv1ElzK-CbY0gnbmGYKgADP2T3nohTWCrzvNW21RuZbt8UK988EMKUAMPJMfKkqAFW5YKL2CmQ5W9M08KvzQ5ZRj5HkmlVCbiAEAKgSGEOro2xUo0","APA91bF6ie18DQGXybfzG8354ECS3yR2BVJN_DwoIKxv1CcfPgyRbRRb4KAg9hbQfUnTDdFJGScnH0it0sPHhmhfVQgYy87zkJx9Zw29drxtU1MJP4HCXg9MIGs7MEW9gmMFNJorY_k6kkDVzmKr_NfVwNHz79ufPQ" );
 
 // prep the bundle
 $msg = array

@@ -1,7 +1,7 @@
 <?php
 
 // API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'AIzaSyD4TSL29NyidoU6QsHgsK6BnHoUYDtoaNA' );
+define( 'API_ACCESS_KEY', 'AIzaSyDGM0hPh6v3auyAwLJmKAO8NSqUf30uvLk' );
 
 
 $registrationIds = array("APA91bHpy-_d_eJ1hZmalBc67-BuAAM79FoMkjxRO_UF33RA5PSNRAQfj-D7TEg26pX42sgFpPXVQjk_WkfQlqXoIt_Vwj9SA7n8zaAfUqHdop0CeGcAwvseBJdquTXb_bqjAZPZ1RL6dDkKecm_mqjwnuWTxCbbgA" );
@@ -30,7 +30,7 @@ $headers = array
 );
 
 $ch = curl_init();
-curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+curl_setopt( $ch,CURLOPT_URL, 'https://fcm.googleapis.com/fcm/send' );
 curl_setopt( $ch,CURLOPT_POST, true );
 curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
 curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );

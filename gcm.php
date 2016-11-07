@@ -1,6 +1,6 @@
 <?php
 
-echo "php started";
+echo "php started now";
 // API access key from Google API's Console
 define( 'API_ACCESS_KEY', 'YOUR-API-ACCESS-KEY-GOES-HERE' );
 

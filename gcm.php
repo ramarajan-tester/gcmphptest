@@ -21,7 +21,7 @@ $notification["icon"]="fcm_push_icon";
 $data = array('notification'=>$notification,'pdfurl'=>'www.google.com');
 
 $fields['data'] = $data;
-$target =  array("clqky1qOaXo:APA91bH94u34kOIz_1gkRMBS_9wFSLOxUIaEFXXT13kg3v0t2y5CtlPUvdH1qaMkfaaUrLF8XZIyJQXcOTa5v5R5vIOKXj-UhYk4EwE3GPAaFSFTYRF17wAHIZpHQJS1vj5bi_KPq84S");
+$target =  array("1111clqky1qOaXo:APA91bH94u34kOIz_1gkRMBS_9wFSLOxUIaEFXXT13kg3v0t2y5CtlPUvdH1qaMkfaaUrLF8XZIyJQXcOTa5v5R5vIOKXj-UhYk4EwE3GPAaFSFTYRF17wAHIZpHQJS1vj5bi_KPq84S");
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

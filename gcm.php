@@ -1,7 +1,7 @@
 <?php
 
 // API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'AIzaSyCAf5jJ7thpOKFGEo2rkYG-gJnv9hlA25Q' );
+define( 'API_ACCESS_KEY', 'AIzaSyDGM0hPh6v3auyAwLJmKAO8NSqUf30uvLk' );
 
 
 $registrationIds = array("dUPLt84BL6Q:APA91bGlxxfmHXnw_deZK_17cvYetIGpUTmtH9AZ_iPl6QA-TRu3sSC8KO1LxeXjw56vht09cgvqjVxttHvv0JPmZ2QDmrMCMur0WyGGlyoWtrtH5mQC1HNmbaZDcz2KEcdiy67vU9Y4");

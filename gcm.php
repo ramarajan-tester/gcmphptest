@@ -19,7 +19,7 @@ $notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 //$data = array('notification'=>$notification,'pdfurl'=>'www.google.com');
-$data = array('message'=>'Message','pdfurl'=>'http://cdn-10.nikon-cdn.com/pdf/manuals/noprint/D7000_ENnoprint.pdf');
+$data = array('message'=>'Message','pdfurl'=>'http://59.93.41.160/slims/pdffiles/01007468-2016-09-30.pdf');
 
 
 

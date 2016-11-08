@@ -1,5 +1,3 @@
-//New Php
-
 <?php
 /*  
 Parameter Example
@@ -13,7 +11,7 @@ Parameter Example
 $url = 'https://fcm.googleapis.com/fcm/send';
 //api_key available in Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key
 $server_key = 'AIzaSyDLjgLQLon7be9Z3Hhqehuop_nM5EBT5tw';
-			
+die ("test");
 $fields = array();
 $fields['data'] = $data;
 $target =  array("dUPLt84BL6Q:APA91bGlxxfmHXnw_deZK_17cvYetIGpUTmtH9AZ_iPl6QA-TRu3sSC8KO1LxeXjw56vht09cgvqjVxttHvv0JPmZ2QDmrMCMur0WyGGlyoWtrtH5mQC1HNmbaZDcz2KEcdiy67vU9Y4");

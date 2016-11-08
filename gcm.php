@@ -12,6 +12,14 @@ $url = 'https://fcm.googleapis.com/fcm/send';
 //api_key available in Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key
 $server_key = 'AIzaSyDLjgLQLon7be9Z3Hhqehuop_nM5EBT5tw';
 $fields = array();
+
+$notification["title"] ="Title";
+$notification["body"] ="message";
+$notification["sound"] ="default";
+$notification["click_action"]="FCM_PLUGIN_ACTIVITY";
+$notification["icon"]="fcm_push_icon";
+$data = array('notification'=>$notification,'pdfurl'=>'www.google.com');
+
 $fields['data'] = $data;
 $target =  array("dUPLt84BL6Q:APA91bGlxxfmHXnw_deZK_17cvYetIGpUTmtH9AZ_iPl6QA-TRu3sSC8KO1LxeXjw56vht09cgvqjVxttHvv0JPmZ2QDmrMCMur0WyGGlyoWtrtH5mQC1HNmbaZDcz2KEcdiy67vU9Y4");
 if(is_array($target)){

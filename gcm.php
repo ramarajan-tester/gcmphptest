@@ -19,7 +19,7 @@ $notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 //$data = array('notification'=>$notification,'pdfurl'=>'www.google.com');
-	$data = array('post_id'=>'12345','post_title'=>'A Blog post');
+$data = array('message'=>'Message','pdfurl'=>'www.google.com');
 
 
 

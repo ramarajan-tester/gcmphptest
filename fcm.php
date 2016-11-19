@@ -18,7 +18,7 @@ $notification["body"] ="message";
 $notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
-$data = array('message'=>'Message','pdfurl'=>'http://59.93.41.160/slims/pdffiles/01007468-2016-09-30.pdf');
+$data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 
 
 

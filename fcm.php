@@ -25,7 +25,7 @@ $data = array('message'=>'Message','pdfurl'=>'http://59.93.41.160/slims/pdffiles
 $fields['data'] = $data;
 $fields['notification']=$notification;
 
-$target =  array("clqky1qOaXo:APA91bH94u34kOIz_1gkRMBS_9wFSLOxUIaEFXXT13kg3v0t2y5CtlPUvdH1qaMkfaaUrLF8XZIyJQXcOTa5v5R5vIOKXj-UhYk4EwE3GPAaFSFTYRF17wAHIZpHQJS1vj5bi_KPq84S","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
+$target =  array("fKmPyWx2G0M:APA91bEGJQkLWMrYzO3m1a_1odVWI1yRxBUiZZkNpRTsGUiEm9IUAC6tRtIlphdhyKEDdzW1fEdgLmIL55JXySrhCMPfkqpyMGtNHjJhagbpJsZEbb1BIOccJvOe43sDLGwbZbGcMJcU","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

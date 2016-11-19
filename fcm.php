@@ -25,8 +25,7 @@ $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_
 $fields['data'] = $data;
 $fields['notification']=$notification;
 
-$target =  array("ddtN-pYhih8:APA91bGCZsbbRqLzc6Cv7RDKqE1i0QH_XbU258blDF8ObCqJBa3D2CfdcE0_RFnVeY-e2anQDIOdrJKmCSXGyjBS4WDAr2AJz98rX9B3bHVgwq8ul8yDWc1e5fUJfSfrk00hPAdqPOyL
-","dBveDoVXi5Y:APA91bHfSwkzbf8LB9HKpqM4zG7UzFscRmBG4MpvEua9gGKv_KEunybODve-_KWZUGZyeEaTNKcK21wq5zxXTtI5lnNIxm6D7NZUeYxruG7aGvCZRsOawbsWzyiGi8ejRzKN2bj73RNY","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
+$target =  array("ddtN-pYhih8:APA91bGCZsbbRqLzc6Cv7RDKqE1i0QH_XbU258blDF8ObCqJBa3D2CfdcE0_RFnVeY-e2anQDIOdrJKmCSXGyjBS4WDAr2AJz98rX9B3bHVgwq8ul8yDWc1e5fUJfSfrk00hPAdqPOyL","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

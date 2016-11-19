@@ -25,7 +25,7 @@ $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_
 $fields['data'] = $data;
 $fields['notification']=$notification;
 
-$target =  array("fzjraGOtRds:APA91bG_jPSkNHDgYyXxRN8DxywHwx2kI-jajk7ZjA7SNki83Rg2tGU5rG3vBUFuR4dI5hKmOotzd7T92B8pLpZLfo2fdvufKNRtLgBW3wFgK3Xsm1aGxkx2naMACQh6HL4ddVj6tbLC","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
+$target =  array("AIzaSyDGM0hPh6v3auyAwLJmKAO8NSqUf30uvLk","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

@@ -10,7 +10,7 @@ Parameter Example
 //FCM api URL
 $url = 'https://fcm.googleapis.com/fcm/send';
 //api_key available in Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key
-$server_key = 'AIzaSyDh3rR2iJpuodX45ezaDCw3_2tsC5XWhkE';
+$server_key = 'AIzaSyDGM0hPh6v3auyAwLJmKAO8NSqUf30uvLk';
 $fields = array();
 
 $notification["title"] ="Test";

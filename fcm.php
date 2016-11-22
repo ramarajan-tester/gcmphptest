@@ -47,11 +47,12 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
 $result = curl_exec($ch);
-echo "Hi3";
-die();
 
 if ($result === FALSE) {
 	die('FCM Send Error: ' . curl_error($ch));
 }
+echo $result;
+die();
+
 curl_close($ch);
 echo $result;

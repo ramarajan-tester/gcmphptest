@@ -48,6 +48,8 @@ if ($result === FALSE) {
 	die('FCM Send Error: ' . curl_error($ch));
 }
 curl_close($ch);
-echo $result;
-echo "Input data";
+
+echo "<br> Input data";
 echo "<br>". json_encode($fields);//data
+echo "<br>". $result;//output
+

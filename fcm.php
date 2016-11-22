@@ -36,8 +36,7 @@ $headers = array(
 	'Content-Type:application/json',
   'Authorization:key='.$server_key
 );
-	echo "Hi3";
-die();
+	
 		
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -48,6 +47,9 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
 $result = curl_exec($ch);
+echo "Hi3";
+die();
+
 if ($result === FALSE) {
 	die('FCM Send Error: ' . curl_error($ch));
 }

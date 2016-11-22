@@ -18,14 +18,12 @@ $notification["body"] ="message";
 $notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
+$fields['notification']=$notification;// push notification default data part - for title,short description etc
+
 $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
+$fields['data'] = $data;//custom data part - for custom messages
 
-
-
-$fields['data'] = $data;
-$fields['notification']=$notification;
-
-$target =  array("cSAXxEDNCSs:APA91bFAWir7eJdLev2VtjEO3BZPAU-vtN16vHGfB4ZNfmV7r4Xff2_59aKulIvXGUtzoxzt1EBYEzkUW6xGJI2sDrxAvjjIQHWYgk742VWDW4EtkIMBlDdaUu0gEQkxwo9chxGcm_e7","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
+$target =  array("cSAXxEDNCSs:APA91bFAWir7eJdLev2VtjEO3BZPAU-vtN16vHGfB4ZNfmV7r4Xff2_59aKulIvXGUtzoxzt1EBYEzkUW6xGJI2sDrxAvjjIQHWYgk742VWDW4EtkIMBlDdaUu0gEQkxwo9chxGcm_e7");// Phone push token
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{
@@ -44,7 +42,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));// push data and receiver phone tokens
 $result = curl_exec($ch);
 if ($result === FALSE) {
 	die('FCM Send Error: ' . curl_error($ch));

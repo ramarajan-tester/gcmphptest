@@ -15,7 +15,7 @@ $fields = array();
 
 $notification["title"] ="Test";
 $notification["body"] ="sds";
-//$notification["sound"] ="default";
+$notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 $fields['notification']=$notification;// push notification default data part - for title,short description etc

@@ -23,7 +23,7 @@ $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_
 
 $fields['data'] = $data;
 $fields['notification']=$notification;
-echo "Hi";
+echo $fields;
 die();
 
 

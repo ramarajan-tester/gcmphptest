@@ -49,5 +49,5 @@ if ($result === FALSE) {
 }
 curl_close($ch);
 echo $result;
-
-echo "<br>". json_decode($fields);//data
+echo "Input data";
+echo "<br>". json_encode($fields);//data

@@ -13,7 +13,7 @@ $url = 'https://fcm.googleapis.com/fcm/send';
 $server_key = 'AIzaSyBWNop1S48dmcnsLOJS4XQkpls3K4c9nfE';
 $fields = array();
 
-$notification["title"] ="Test";
+$notification["title"] ="";
 $notification["body"] ="sds";
 $notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";

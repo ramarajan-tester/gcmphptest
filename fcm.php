@@ -31,7 +31,7 @@ if(is_array($target)){
 }else{
 	$fields['to'] = $target;
 }
-echo $fields;
+echo $target;
 die();
 
 //header with content_type api key

@@ -21,24 +21,21 @@ $notification["icon"]="fcm_push_icon";
 $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 
 
+
 $fields['data'] = $data;
 $fields['notification']=$notification;
 
-
-$target =  array("fx64oZqVSGg:APA91bEJHiloypJZRRh9U2SdWK9XC0RQ6f0-4y7vzNScbPzX2hEcrcEo5fUgE_yyNo-nPkCIwW4RL-9UgvBKmqBx5Qvn54mOKWlADklsFjnEHKTHnjpB4LQmpfPgBxmJAbmSJk_9fsSq","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
+$target =  array("clqky1qOaXo:APA91bH94u34kOIz_1gkRMBS_9wFSLOxUIaEFXXT13kg3v0t2y5CtlPUvdH1qaMkfaaUrLF8XZIyJQXcOTa5v5R5vIOKXj-UhYk4EwE3GPAaFSFTYRF17wAHIZpHQJS1vj5bi_KPq84S","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{
 	$fields['to'] = $target;
 }
-
 //header with content_type api key
 $headers = array(
 	'Content-Type:application/json',
   'Authorization:key='.$server_key
 );
-echo $headers;
-die();
 			
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -49,11 +46,8 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
 $result = curl_exec($ch);
-
 if ($result === FALSE) {
 	die('FCM Send Error: ' . curl_error($ch));
 }
-
-
 curl_close($ch);
 echo $result;

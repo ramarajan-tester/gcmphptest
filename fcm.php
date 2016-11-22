@@ -31,16 +31,15 @@ if(is_array($target)){
 }else{
 	$fields['to'] = $target;
 }
-echo $target;
-die();
 
 //header with content_type api key
 $headers = array(
 	'Content-Type:application/json',
   'Authorization:key='.$server_key
 );
-	
-		
+echo $server_key;
+die();
+			
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, true);

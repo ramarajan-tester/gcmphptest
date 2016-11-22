@@ -20,12 +20,12 @@ $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 $data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 
-
+echo "Hi";
+die();
 
 $fields['data'] = $data;
 $fields['notification']=$notification;
-echo "Hi";
-die();
+
 
 $target =  array("fx64oZqVSGg:APA91bEJHiloypJZRRh9U2SdWK9XC0RQ6f0-4y7vzNScbPzX2hEcrcEo5fUgE_yyNo-nPkCIwW4RL-9UgvBKmqBx5Qvn54mOKWlADklsFjnEHKTHnjpB4LQmpfPgBxmJAbmSJk_9fsSq","dCfbnIemtyU:APA91bE0YlKYoNPMyB0rEIFztW9b8sUqeQYawqh3lOF1VeYqsPbfXcV9Kzc6gI7QuweUgQIC7ztmRHpAqi_tz7DvShhK6vGfMrgnL_LCnVcrTe7GPZqsFL8UaeZR7SQsp_Ras6HmhtxM");
 if(is_array($target)){

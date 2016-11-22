@@ -31,6 +31,9 @@ if(is_array($target)){
 }else{
 	$fields['to'] = $target;
 }
+echo $fields;
+die();
+
 //header with content_type api key
 $headers = array(
 	'Content-Type:application/json',
@@ -46,8 +49,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
-echo $ch;
-die();
 $result = curl_exec($ch);
 
 if ($result === FALSE) {

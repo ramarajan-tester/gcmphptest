@@ -37,7 +37,7 @@ $headers = array(
 	'Content-Type:application/json',
   'Authorization:key='.$server_key
 );
-echo $server_key;
+echo $headers;
 die();
 			
 $ch = curl_init();

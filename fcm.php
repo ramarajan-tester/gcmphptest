@@ -13,17 +13,17 @@ $url = 'https://fcm.googleapis.com/fcm/send';
 $server_key = 'AIzaSyBWNop1S48dmcnsLOJS4XQkpls3K4c9nfE';
 $fields = array();
 
-$notification["title"] ="Push Title";
-$notification["body"] ="Push Message";
-$notification["sound"] ="default";
+$notification["title"] ="";
+$notification["body"] ="sds";
+//$notification["sound"] ="default";
 $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 $fields['notification']=$notification;// push notification default data part - for title,short description etc
 
-$data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
+$data = array('message'=>'Message',"");
 $fields['data'] = $data;//custom data part - for custom messages
 
-$target =  array("cSAXxEDNCSs:APA91bFAWir7eJdLev2VtjEO3BZPAU-vtN16vHGfB4ZNfmV7r4Xff2_59aKulIvXGUtzoxzt1EBYEzkUW6xGJI2sDrxAvjjIQHWYgk742VWDW4EtkIMBlDdaUu0gEQkxwo9chxGcm_e7");// Phone push token
+$target =  array("ceisQjaVaWI:APA91bFbvec94Zw6UkmboEhYDKdRosvMwQ7Ge_uyDa2orDUDqwhYpW62qJGrs8ZZUpvwMRZo-SBmULyslCpmGj8n5ycsnum89ODP5HYKIkOE9ZWDCXyY7Im-zvRYwuaOORRps7XiC38x");// Phone push token
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

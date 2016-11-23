@@ -20,7 +20,7 @@ $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 $fields['notification']=$notification;// push notification default data part - for title,short description etc
 
-$data = array('pdfurl'=>'http://www.pdfpdf.com/samples/Sample2.PDF');
+$data = array('pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 $fields['data'] = $data;//custom data part - for custom messages
 
 $target =  array("eAo379WR6-Q:APA91bE8VYU4gQTRQLCqB7_ovempqmPfzBSfrINnvaU5gsBTjW6jdKc_OtYtaQ9wLAHw8HvTjYj3twy7q0fAb7sfRI_WLCn9aAsMjuPoTz0pr5ezchtKrdGlWicrFr0UlBw7Y2UwfsHq","ex2g-6qIzJg:APA91bHKXlENhRDbSSKwT7ikOGaPN_tVV5_8w0SaH2ep3lfKMerbzMnsS4gJ4yJgIvWchDrzYKltLorAUKwA2AU1l05VxkUvETPGipBRUl8FGyzemmeZLfBTywwAlZFnOforJO4Awjx9");// Phone push token

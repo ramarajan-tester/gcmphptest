@@ -20,10 +20,10 @@ $notification["click_action"]="FCM_PLUGIN_ACTIVITY";
 $notification["icon"]="fcm_push_icon";
 $fields['notification']=$notification;// push notification default data part - for title,short description etc
 
-$data = array('message'=>'Message',"");
+$data = array('message'=>'Message','pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 $fields['data'] = $data;//custom data part - for custom messages
 
-$target =  array("ceisQjaVaWI:APA91bFbvec94Zw6UkmboEhYDKdRosvMwQ7Ge_uyDa2orDUDqwhYpW62qJGrs8ZZUpvwMRZo-SBmULyslCpmGj8n5ycsnum89ODP5HYKIkOE9ZWDCXyY7Im-zvRYwuaOORRps7XiC38x");// Phone push token
+$target =  array("eAo379WR6-Q:APA91bE8VYU4gQTRQLCqB7_ovempqmPfzBSfrINnvaU5gsBTjW6jdKc_OtYtaQ9wLAHw8HvTjYj3twy7q0fAb7sfRI_WLCn9aAsMjuPoTz0pr5ezchtKrdGlWicrFr0UlBw7Y2UwfsHq");// Phone push token
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

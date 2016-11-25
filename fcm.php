@@ -23,7 +23,7 @@ $fields['notification']=$notification;// push notification default data part - f
 $data = array('pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 $fields['data'] = $data;//custom data part - for custom messages
 
-$target =  array("eAo379WR6-Q:APA91bE8VYU4gQTRQLCqB7_ovempqmPfzBSfrINnvaU5gsBTjW6jdKc_OtYtaQ9wLAHw8HvTjYj3twy7q0fAb7sfRI_WLCn9aAsMjuPoTz0pr5ezchtKrdGlWicrFr0UlBw7Y2UwfsHq","ex2g-6qIzJg:APA91bHKXlENhRDbSSKwT7ikOGaPN_tVV5_8w0SaH2ep3lfKMerbzMnsS4gJ4yJgIvWchDrzYKltLorAUKwA2AU1l05VxkUvETPGipBRUl8FGyzemmeZLfBTywwAlZFnOforJO4Awjx9");// Phone push token
+$target =  array("eSAUOJ9aTzc:APA91bFIc9reTrQ0AqcTS1D5Dn_y9sd_QrJyEpI6S5oKQlLbKWel9vLu2b9WSXOtO0aRxtA8Ho-NgFHvPBpERX8livcPIgmjCE4VPe5dIuhnO2_pdqn5iLgnRC_J-WjHOYC7Gv_6g6gU","ex2g-6qIzJg:APA91bHKXlENhRDbSSKwT7ikOGaPN_tVV5_8w0SaH2ep3lfKMerbzMnsS4gJ4yJgIvWchDrzYKltLorAUKwA2AU1l05VxkUvETPGipBRUl8FGyzemmeZLfBTywwAlZFnOforJO4Awjx9");// Phone push token
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{

@@ -10,7 +10,7 @@ Parameter Example
 //FCM api URL
 $url = 'https://fcm.googleapis.com/fcm/send';
 //api_key available in Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key
-$server_key = 'AIzaSyBWNop1S48dmcnsLOJS4XQkpls3K4c9nfE';
+$server_key = 'AIzaSyAHbtplfIVK3hpqnduoe-FjzuEnXBmJpgk';
 $fields = array();
 
 $notification["title"] ="";
@@ -23,7 +23,7 @@ $fields['notification']=$notification;// push notification default data part - f
 $data = array('pdfurl'=>'http://103.249.204.101:7125/Slims_Demo/pdffiles/01001221-2016-11-18.pdf');
 $fields['data'] = $data;//custom data part - for custom messages
 
-$target =  array("eSAUOJ9aTzc:APA91bFIc9reTrQ0AqcTS1D5Dn_y9sd_QrJyEpI6S5oKQlLbKWel9vLu2b9WSXOtO0aRxtA8Ho-NgFHvPBpERX8livcPIgmjCE4VPe5dIuhnO2_pdqn5iLgnRC_J-WjHOYC7Gv_6g6gU","ex2g-6qIzJg:APA91bHKXlENhRDbSSKwT7ikOGaPN_tVV5_8w0SaH2ep3lfKMerbzMnsS4gJ4yJgIvWchDrzYKltLorAUKwA2AU1l05VxkUvETPGipBRUl8FGyzemmeZLfBTywwAlZFnOforJO4Awjx9");// Phone push token
+$target =  array("e6f55XaQk70:APA91bF8CVsAA5C993NiaiaMZIRPJmCbGggkqTcb98_rLGIoD5V7GIWB1_ZMeCw-ypP-GCiWQBCuEtEDsi6fHu9mm4KxpF2MqbM8BOme7vn04x5zvTMHBuvFAm3xztTQUvn1ksE8i_Im");// Phone push token
 if(is_array($target)){
 	$fields['registration_ids'] = $target;
 }else{
